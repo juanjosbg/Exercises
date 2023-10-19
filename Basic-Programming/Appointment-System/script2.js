@@ -1,10 +1,5 @@
 function comenzarCita() {
-    let diaElegido = "";
-
-    let jugador = 0;
-    let suerte = 0;
-    let hora = 0;
-    let dia = 0;
+    let diaElegido = "", jugador = 0, suerte = 0, hora = 0, dia = 0;
 
     const Name = document.getElementById("nombre").value;
     const confirmacionSuerte = confirm("Hola " + Name + ", ¿quieres probar tu suerte?");
@@ -52,7 +47,7 @@ function comenzarCita() {
                             horaCitaResult.textContent = "Hora de la cita: " + hora + ":00 horas";
 
                             alert("Tu cita en " + lugarElegido + " está programada para el " + diaElegido + " a las " + hora + ":00 horas.");
-                            alert("Nunca olvides que te amo. 🌷🌻");
+                            
                         } else {
                             alert("Hora no válida. Debes ingresar un número entre 0 y 23 para representar la hora en formato de 24 horas.");
                         }
@@ -85,7 +80,7 @@ function comenzarCita() {
                             horaCitaResult.textContent = "Hora de la cita: " + hora2 + ":00 horas";
 
                             alert(Name + ", Nuestra cita en " + lugarElegido2 + " está programada para el " + diaElegido2 + " a las " + hora2 + ":00 horas.");
-                            alert("Nunca olvides que te amo. 🌷🌻");
+                            
                         } else {
                             alert("Hora no válida. Debes ingresar un número entre 0 y 23 para representar la hora en formato de 24 horas.");
                         }
